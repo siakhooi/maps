@@ -13,3 +13,5 @@ build:
 	scripts/build.sh
 install:
 	scripts/install-dependencies.sh
+release:
+	scripts/release.sh
