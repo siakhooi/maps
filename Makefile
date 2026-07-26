@@ -15,6 +15,6 @@ info2:
 	ogrinfo out.geojson
 
 clean:
-	rm -rf docs
+	rm -rf www
 build:
 	scripts/build.sh
