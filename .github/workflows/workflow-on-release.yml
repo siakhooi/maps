@@ -1,0 +1,13 @@
+name: Release
+on:
+  release:
+    types: [created]
+
+
+jobs:
+  build:
+    uses: ./.github/workflows/build.yml
+
+  gh-pages:
+    needs: build
+    uses: ./.github/workflows/gh-pages.yml
