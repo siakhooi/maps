@@ -3,6 +3,8 @@ on:
   release:
     types: [created]
 
+permissions:
+  contents: read
 
 jobs:
   build:
@@ -11,3 +13,5 @@ jobs:
   gh-pages:
     needs: build
     uses: ./.github/workflows/gh-pages.yml
+    permissions:
+      contents: write

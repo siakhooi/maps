@@ -2,6 +2,9 @@ name: gh-pages
 
 on: workflow_call
 
+permissions:
+  contents: write
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
