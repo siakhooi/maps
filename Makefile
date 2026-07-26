@@ -1,10 +1,3 @@
-install:
-	sudo apt update
-	sudo apt install gdal-bin
-
-	ogr2ogr --version
-	gdalinfo --version
-
 info:
 	ogrinfo src/public-transport/my/klang-valley/brt.kml
 
@@ -18,3 +11,5 @@ clean:
 	rm -rf www
 build:
 	scripts/build.sh
+install:
+	scripts/install-dependencies.sh
